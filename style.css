@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.game-wrapper{
+    position: relative;
+}
+
+#score{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-54%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 10;
+
+}
+#game-container{
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(orange,rgb(205, 250, 7));
+    position: relative;
+    overflow: hidden;
+    border: 4px solid white;
+    border-radius: 8px;
+    background-image:"file:///C:/Users/106/Desktop/Новая%20папка/птичка.svg"
+}
+#bird{ width:35px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+    border: 2px solid #333;
+}
+
+#start-mesage{
+    color:  white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.pipe{
+    position:  absolute;
+    width: 50px;
+    background-color: rgb(2, 51, 2);
+    border: 2px solid rgb(2, 248, 125);
+}
